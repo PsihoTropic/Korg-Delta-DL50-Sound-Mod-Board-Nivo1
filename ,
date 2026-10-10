@@ -1,0 +1,21 @@
+# Korg DELTA DL-50 Sound Mod Board - Nivo 1
+
+## Predlog projekta
+
+Ovaj projekat predstavlja DIY sound mod board za Korg DELTA DL-50 u Nivo 1 konfiguraciji. Ideja je da se modul ubaci kao insert segment PRE Korgovog analognog filtera, čime se menja karakter zvuka pre nego što signal stigne do VCF-a. Ovo je najbezbedniji i najpraktičniji prvi korak za customizaciju zvuka bez direktnog diranja originalne elektronike.
+
+## Osnovna ideja
+
+Signal iz DL-50 se odvaja odmah pre analognog filtera / VCF ulaza i prolazi kroz dodatni audio blok:
+
+- input buffer
+- drive / saturation stage
+- tone shaping stage
+- mix / dry-wet stage
+- output buffer
+
+Nakon toga signal se vraća u originalni signal path u filter.
+
+To daje:
+- više harmonika
+- topliji i 
